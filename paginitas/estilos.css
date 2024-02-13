@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor div{
+    width: 300px;
+    height: 300px;
+    background-color: #453;
+    margin: 20px;
+    border-radius: 50%;
+    filter:drop-shadow(5px 5px 10px  #000);
+    
+}
+
+/*caja1*/
+
+.caja1 > p{  /*este afecta a los hijos de la caja1*/
+    padding: 10px;
+    text-align: center;
+    color:rgb(255, 129, 2);
+}
+
+
+/*segunda caja*/
+.caja2 h3 {   
+    padding: 10px;
+    text-align: center;
+    color:rgb(38, 0, 255);
+}
+
+
+
+.caja2 h3 + p{   /*este afecta al elemento que esta al lado del que llama */
+    padding: 10px;
+    text-align: center;
+    color:rgb(0, 255, 55);
+}
+
+
+
+
+/*tercera caja3*/
+.caja3 h4 { 
+    padding-top: 20px;
+    color: red;
+    position: relative;
+    left: 100px;
+}
+.caja3 > b{  /*entra a  todos los b*/
+    padding-top: 20px;
+    color: rgb(0, 255, 76);
+    position: relative;
+    left: 100px;
+}
+
+
+
+
+
+.caja3 h4 ~ p{ /*afecta a los hijos en general que contiene un contenedor*/
+    padding: 30px 0px 0px 120px;
+    text-align: center;
+    position: relative;
+    left: -100px;
+    color:rgb(255, 208, 0);
+}
